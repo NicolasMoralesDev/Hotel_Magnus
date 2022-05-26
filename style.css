@@ -1,0 +1,72 @@
+/* normalizacion */
+
+*{
+     box-sizing: border-box;
+     padding: 0;
+     margin: 0;
+     
+}
+
+a {
+    text-decoration: none;
+}
+
+html{
+     font-size: 10px;
+     scroll-behavior: auto;
+}
+
+ul , ol , li{
+     list-style: none;
+     text-decoration: none;
+}
+
+/* header */
+
+header{
+    text-align: center;
+}
+
+header > h1 {
+    font-size: 5rem; 
+    margin: 2%;
+    text-transform: uppercase;
+    font-family:'Times New Roman', Times, serif;
+}
+
+#subtitulo{
+    display: inline-block;
+    position: relative;
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.5rem;
+}
+
+#subtitulo::after , #subtitulo::before {
+    content: '';
+    position: absolute;
+    background-color: currentColor;
+    width: 120px;
+    height: 3px;
+    top: 0.6em;
+   
+}
+
+#subtitulo::after {
+    left:200px ;
+}
+
+#subtitulo::before {
+    right:200px ;
+}
+
+/* nav */
+
+.container_nav{
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+}
+
+.container_nav li {
+    padding: 3rem;
+}
