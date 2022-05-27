@@ -16,6 +16,8 @@
     <!-- Fuentes Google -->
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=IBM+Plex+Serif&display=swap" rel="stylesheet">
+    <!-- Boostrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
    <title>Home</title>
 </head>
 <body>
@@ -34,7 +36,7 @@
    </nav>
     <main>
         <section>
-            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+            <div id="carouselExampleIndicators" class="carousel slide " data-bs-ride="true">
                 <div class="carousel-indicators">
                   <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                   <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -50,6 +52,7 @@
                   <div class="carousel-item">
                     <img src="img/hotel1.jpg" class="d-block w-100" alt="...">
                   </div>
+                  <div class="carousel-fondo"><h2>Servicio de Primer Nivel</h2></div> 
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
                   <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -62,7 +65,26 @@
               </div>
         </section>
     </main>
-    <footer></footer>
+    <footer class="grid  container-fluid justify-content-center">
+        <div class="row">
+            <div class="col"><ol><li>Redes</li>
+                                   <li><i class="bi bi-whatsapp"></i> Whatsapp</li>
+                                   <li><i class="bi bi-envelope-check"></i> E-mail</li>
+                                   <li><i class="bi bi-instagram"></i> Instagram</li>
+                                   <li><i class="bi bi-facebook"></i> Facebook</li>
+                                   <li><i class="bi bi-twitter"></i> Twitter</li></ol></div>
+            <div class="col"><ol><li>Sucursales</li>
+                                   <li>Tucuman</li>
+                                   <li>Jujuy</li>
+                                   <li>Salta</li>
+                                   <li>CABA</li>
+                                   <li>Bariloche</li>
+                                </ol></div>
+        </div>
+        <div class="row text-light">
+            <span id="footer-pie ">© copyright Nicolas Morales - 2022</span>
+        </div>
+    </footer>
     
 </body>
 </html>
