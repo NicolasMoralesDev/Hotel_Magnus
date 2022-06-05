@@ -1,11 +1,18 @@
+
+/* Funcion Spinner */
+
 window.onload= function(){
-    let spinner = document.getElementById('spinner');
-    
+
+    const spinner = document.getElementById('spinner');
+    const ocultar = document.getElementById('hidden');
+
     setTimeout(() => {
+
+       ocultar.style.overflowY="scroll";
        spinner.style.visibility='hidden';
        spinner.style.opacity='0'; 
-       
-    }, 5000);
+
+    }, 2000);
     
 
 };

@@ -18,22 +18,23 @@
     rel="stylesheet" />
   <!-- Boostrap icons -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css" />
-  <script src="js/app.js"></script>
-
   <title>Home</title>
 </head>
 
-<body>
+<body id="hidden">
   <!-- Spinner -->
-  <div id="spinner"><div class="spinner-grow text-secondary"  role="status">
-    <span class="sr-only"></span>
-  </div></div>
+  <div id="spinner">
+    <div class="spinner-grow text-secondary" style="height: 5rem; width: 5rem;" role="status">
+      <span class="sr-only"></span>
+    </div>
+  </div>
 
   <!-- header -->
-  <header class="m-5" >
+  <header class="m-5">
     <h1 style="font-size: 4.5rem;">Magnus</h1>
     <h2 id="subtitulo">Hotel de vanguardia</h2>
   </header>
+
   <!-- nav -->
   <nav>
     <ol class="container_nav text-dark">
@@ -76,6 +77,16 @@
           <div class="carousel-item">
             <img src="img/hotel1.jpg" class="d-block w-100" alt="..." />
           </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
           <div class="carousel-fondo">
             <h2 id="formulario">Servicio de Primer Nivel</h2>
             <!-- Button trigger modal -->
@@ -123,64 +134,52 @@
           </div>
         </div>
       </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-        data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-        data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-      </div>
     </section>
     <!-- imagenes -->
-    <section id="imagenes" class="p-5" >
+    <section id="imagenes">
       <div class="card mb-3" style="max-width: 100%; border: none; height: 25rem;">
-        <div class="row g-5">
+        <div class="row">
           <div class="col-md-6">
             <div class="card-body">
               <h1 class="card-title">HOTEL MAGNUS</h1>
               <h2 class="sub-card">Disfruta de tu estadia con estilo</h2>
             </div>
           </div>
-          <div class="col-md-6 d-flex justify-content-center"><p class="card-text">
-                Lorem, ipsum dolor sit amet Lorem ipsum dolor sit amet
-                consectetur adipisicing elit. Blanditiis velit nesciunt
-                deserunt dolor tempore hic exercitationem, tempora ducimus
-                natus aut ullam in repellat, ad esse consequuntur possimus
-                quidem? Necessitatibus, sed! Aliquid neque, necessitatibus
-                sunt at quibusdam facere qui dicta pariatur. Minima est nobis,
-                ad voluptates facere asperiores soluta vitae. 
-                <br>
-                <br>
-                Sunt quos quam
-                rem dolorum iusto architecto amet enim repellat quisquam?
-                Porro eaque veritatis at laboriosam incidunt sapiente numquam
-                accusantium sunt id ipsa cumque magni exercitationem ea et,
-                hic nobis pariatur omnis dolores? Tenetur rem eos ullam
-                dignissimos, necessitatibus placeat minus.consectetursum ab
-                reprehenderit quidem provident.menda earum praesentium non
-                nostrum laborum corrupti, aliquam repellat distinctio numquam,
-                sunt natus ullam? This is a wider card with supporting text
-                below as a natural lead-in to additional content. This content
-                is a little bit longer.
-              </p>
+          <div class="col-md-6 d-flex justify-content-center">
+            <p class="card-text">
+              Lorem, ipsum dolor sit amet Lorem ipsum dolor sit amet
+              consectetur adipisicing elit. Blanditiis velit nesciunt
+              deserunt dolor tempore hic exercitationem, tempora ducimus
+              natus aut ullam in repellat, ad esse consequuntur possimus
+              quidem? Necessitatibus, sed! Aliquid neque, necessitatibus
+              sunt at quibusdam facere qui dicta pariatur. Minima est nobis,
+              ad voluptates facere asperiores soluta vitae.
+              <br>
+              <br>
+              Sunt quos quam
+              rem dolorum iusto architecto amet enim repellat quisquam?
+              Porro eaque veritatis at laboriosam incidunt sapiente numquam
+              accusantium sunt id ipsa cumque magni exercitationem ea et,
+              hic nobis pariatur omnis dolores? Tenetur rem eos ullam
+              dignissimos, necessitatibus placeat minus.consectetursum ab
+              reprehenderit quidem provident.menda earum praesentium non
+              nostrum laborum corrupti, aliquam repellat distinctio numquam,
+              sunt natus ullam? This is a wider card with supporting text
+              below as a natural lead-in to additional content. This content
+              is a little bit longer.
+            </p>
           </div>
         </div>
       </div>
-    </section> 
-    <section class="container-fluid d-flex justify-content-center p-5"> 
+    </section>
+    <section class="container-fluid d-flex justify-content-center p-5">
       <div>
         <div class="row">
-        <div class="col-xl-4  col-md-12"> <img src="img/articulo1.jpg" alt=""></div>
-        <div class=" col-xl-4  col-md-12"><img src="img/articulo2.jpg" alt=""></div>
-        <div class="col-xl-4  col-md-12"> <img src="img/articulo3.jpg" alt=""></div>
-      
+          <div class="col-xl-4  col-md-12"> <img src="img/articulo1.jpg" alt=""></div>
+          <div class=" col-xl-4  col-md-12"><img src="img/articulo2.jpg" alt=""></div>
+          <div class="col-xl-4  col-md-12"> <img src="img/articulo3.jpg" alt=""></div>
+        </div>
       </div>
-  </div>
     </section>
     <section>
       <div class="d-flex justify-content-center align-items-center flex-column container-reservas">
@@ -226,7 +225,8 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
     crossorigin="anonymous"></script>
-    <!-- Script -->
+  <!-- Script -->
+  <script src="js/app.js"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 </body>
