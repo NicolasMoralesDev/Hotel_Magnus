@@ -21,6 +21,20 @@ ul , ol , li{
      text-decoration: none;
 }
 
+/* spinner */
+
+#spinner{
+   background-color: white;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100%;
+   width: 100%;
+   position: fixed;
+   top:0;
+   z-index: 10000;
+}
+
 /* header */
 
 header{
