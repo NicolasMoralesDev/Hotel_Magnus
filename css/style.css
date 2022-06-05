@@ -189,6 +189,7 @@ button{
 
    .grid{
        font-size: 1.5rem;
+       height: auto;
    }
 
    .card{
